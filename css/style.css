@@ -48,9 +48,14 @@ nav > ul > *:hover {
   border-bottom: solid 1px;
 }
 main {
+  display: flex;
   font-family: "Roboto Condensed", sans-serif;
   position: relative;
   min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 .section1 {
   width: 98vw;
@@ -67,12 +72,34 @@ main {
   padding: 65px;
   border-radius: 0 50% 0 50%;
 }
+#card__welcome > span {
+  font-size: 12pt;
+}
 #card__welcome > h1 {
+  font-size: 30pt;
   margin-bottom: 10px;
 }
 #car1 {
   aspect-ratio: 1/1;
   max-height: 500px;
+}
+.Separator {
+  margin: 70px;
+  font-size: 25pt;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+  padding: 5px;
+  border: solid 5px var(--color2);
+}
+.Separator::after {
+  text-align: center;
+  font-size: smaller;
+  content: "●";
+}
+.Separator::before {
+  text-align: center;
+  font-size: smaller;
+  content: "●";
 }
 .section2 {
   width: 98vw;
@@ -87,6 +114,14 @@ main {
 }
 #products > div {
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#products > div > img {
+  position: relative;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 #products::-webkit-scrollbar {
