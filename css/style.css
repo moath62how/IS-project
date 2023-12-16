@@ -6,9 +6,10 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 :root {
-  --colorBg: #001b2e;
+  --colorBg: #000c15;
   --colorFont1: #b5c9d7;
   --colorFont2: #ffff;
   --color2: #294c60;
@@ -17,6 +18,7 @@
 body {
   background-color: var(--colorBg);
   color: var(--colorFont1);
+  scroll-behavior: smooth;
 }
 header {
   font-family: "Roboto Condensed", sans-serif;
@@ -41,6 +43,10 @@ header > span {
   background-color: #cdd2d6;
   text-decoration: none;
   border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+.authBtn:hover {
+  opacity: 0.8;
 }
 nav > ul {
   list-style: none;
@@ -95,7 +101,7 @@ main {
   min-width: 500px;
 }
 .Separator {
-  margin: 60px;
+  margin-top: 80px;
   font-size: 25pt;
   font-family: "Roboto Condensed", sans-serif;
   text-align: center;
@@ -136,26 +142,6 @@ main {
   border-radius: 5px;
 }
 
-#products::-webkit-scrollbar-track-piece:end {
-  background-color: var(--color2);
-  border-top-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-#products::-webkit-scrollbar {
-  width: 10px;
-  background-color: var(--color2);
-}
-
-#products::-webkit-scrollbar-thumb {
-  background-color: var(--color2);
-  border-radius: 5px;
-}
-
-#products::-webkit-scrollbar-track-piece:end {
-  background-color: var(--color2);
-  border-top-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
 #products > div {
   display: flex;
   flex-direction: column;
@@ -223,6 +209,36 @@ main {
 }
 .card > p {
   font-family: "Fira Sans", sans-serif;
+}
+.section4 {
+  background-image: url(../img/contactImg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 99vw;
+  min-height: 800px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  color: var(--colorBg);
+  width: 285px;
+  height: 240px;
+  border: solid #0a4d7a;
+  padding: 0px;
+  border-radius: 2rem;
+}
+.contact-card > p {
+  font-size: 15pt;
+}
+.contact-card > svg {
+  scale: 2.5;
+  padding: 50px;
 }
 footer {
   background-color: var(--color2);
