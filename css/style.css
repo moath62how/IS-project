@@ -112,30 +112,72 @@ main {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
+  overflow-y: hidden;
   width: 70%;
 }
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  background-image: linear-gradient(to top, #ddd 0%, #ccc 50%, #ddd 100%);
+  border-radius: 5px;
+}
+
+#products::-webkit-scrollbar-track-piece:end {
+  background-color: var(--color2);
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#products::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--color2);
+}
+
+#products::-webkit-scrollbar-thumb {
+  background-color: var(--color2);
+  border-radius: 5px;
+}
+
+#products::-webkit-scrollbar-track-piece:end {
+  background-color: var(--color2);
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 #products > div {
-  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-transform: capitalize;
+}
+#product {
+  display: flex;
+  justify-content: center;
+  border: solid var(--color2);
 }
 #products > div > img {
   position: relative;
   height: 200px;
 }
 #car__img > img {
-  position: relative;
   height: 200px;
 }
-#products > div > img:hover {
+#product:hover > #car__img {
   opacity: 0.5;
-  content: "asd";
+  transition: 0.3s;
 }
-/* #products > div > span {
-   font-size: xx-small; 
-} */
+#Car__name {
+  color: var(--colorFont2);
+  display: none;
+}
+#product:hover > #Car__name {
+  display: inline;
+  position: sticky;
+  bottom: 40%;
+}
 
 footer {
   background-color: var(--color2);
