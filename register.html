@@ -3,120 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/ad7aa15664.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./css/styleRegister.css" />
+    <script src="https://kit.fontawesome.com/ad7aa15664.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styleRegister.css"/>
+    <link rel="stylesheet" href="./css/styleBase.css"/>
     <link rel="stylesheet" href="./css/styleHeader.css" />
-    <link rel="stylesheet" href="./css/styleBase.css" />
     <link rel="stylesheet" href="./css/styleFooter.css" />
     <title>Zenith Motors | Sign Up</title>
   </head>
 
   <body>
     <header>
-      <span
-        ><i class="fa-solid fa-car-rear"></i
-        ><a href="/">&nbsp; Zenith Motors</a></span
-      >
-      <nav>
-        <ul>
-          <li id="homeBtn">Home</li>
-          <li id="ourProductsBtn">Our products</li>
-          <li id="aboutBtn">About</li>
-          <li id="contactBtn">Contact</li>
-        </ul>
-      </nav>
-      <span>
-        <a class="authBtn" href="./Login.html">Login</a>
-        <a class="authBtn" href="./register.html">Sign Up</a>
-      </span>
+        <span><i class="fa-solid fa-car-rear"></i><a href="/">&nbsp; Zenith Motors</a></span>
+        <nav>
+            <ul>
+                <li id="homeBtn"><a href="#">Home</a></li>
+                <li id="ourProductsBtn"><a href="#">Our products</a></li>
+                <li id="aboutBtn"><a href="#">About</a></li>
+                <li id="contactBtn"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <span>
+            <a class="authBtn" href="./Login.html">Login</a>
+            <a class="authBtn" href="./register.html">Sign Up</a>
+        </span>
     </header>
 
     <main>
-      <form class="login-form" action="" method="POST">
-        <h2>Sign Up</h2>
-        <div class="form-group">
-          <label for="firstName">First Name</label>
-          <input
-            type="text"
-            id="firstName"
-            name="firstName"
-            placeholder="John"
-            required
-          />
-        </div>
+        <form class="login-form" action="" method="POST" id="registerForm">
+            <h2>Sign Up</h2>
+            <!-- First Name Field -->
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required />
+            </div>
 
-        <div class="form-group">
-          <label for="lastName">Last Name</label>
-          <input
-            type="text"
-            id="lastName"
-            name="lastName"
-            placeholder="Doe"
-            required
-          />
-        </div>
+            <!-- Last Name Field -->
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+            </div>
 
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="example@example.com"
-            required
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-          />
-          <small class="error-message"
-            >Please enter a valid email address.</small
-          >
-        </div>
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                <small class="error-message" id="emailError">Please enter a valid email address.</small>
+            </div>
 
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Password (8-20 characters)"
-            required
-            minlength="8"
-            maxlength="20"
-          />
-          <small class="error-message"
-            >Password must be 8-20 characters long.</small
-          >
-        </div>
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password (8-20 characters)" required
+                    minlength="8" maxlength="20" />
+                <small class="error-message" id="passwordError">Password must be 8-20 characters long.</small>
+            </div>
 
-        <div class="form-group">
-          <label for="confirmPassword">Confirm Password</label>
-          <input
-            type="password"
-            id="confirmPassword"
-            name="confirmPassword"
-            placeholder="Confirm your password"
-            required
-            minlength="8"
-            maxlength="20"
-          />
-          <small class="error-message">Passwords must match.</small>
-        </div>
+            <!-- Confirm Password Field -->
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password"
+                    required minlength="8" maxlength="20" />
+                <small class="error-message" id="confirmPasswordError">Passwords must match.</small>
+            </div>
 
-        <div class="form-group">
-          <label>
-            <input type="checkbox" name="terms" required /> I agree to the
-            <a href="#">Terms and Conditions</a>
-          </label>
-        </div>
+            <!-- Terms and Conditions Checkbox -->
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" name="terms" required /> I agree to the <a href="#">Terms and Conditions</a>
+                </label>
+            </div>
 
-        <button type="submit">Sign Up</button>
-      </form>
+            <!-- Submit Button -->
+            <button type="submit">Sign Up</button>
+            <p class="login-redirect">Already have an account? <a href="./Login.html">Login here</a></p>
+        </form>
     </main>
 
-    <footer>This website was made by Moath Hussam and Nader El Sayed</footer>
+    <footer>
+        This website was made by Moath Hussam and Nader El Sayed
+    </footer>
 
     <script src="index.js"></script>
+<<<<<<< HEAD
   </body>
 </html>
+=======
+    <script>
+        // Client-side Validation Script
+        const form = document.getElementById('registerForm');
+        form.addEventListener('submit', function (e) {
+            let valid = true;
+
+            // Validate Email
+            const email = document.getElementById('email');
+            const emailError = document.getElementById('emailError');
+            const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+            if (!emailPattern.test(email.value)) {
+                emailError.style.display = 'block';
+                valid = false;
+            } else {
+                emailError.style.display = 'none';
+            }
+
+            // Validate Password Match
+            const password = document.getElementById('password');
+            const confirmPassword = document.getElementById('confirmPassword');
+            const confirmPasswordError = document.getElementById('confirmPasswordError');
+            if (password.value !== confirmPassword.value) {
+                confirmPasswordError.style.display = 'block';
+                valid = false;
+            } else {
+                confirmPasswordError.style.display = 'none';
+            }
+
+            if (!valid) {
+                e.preventDefault(); // Prevent form submission if validation fails
+            }
+        });
+    </script>
+</body>
+
+</html>
+>>>>>>> 7e610aca87f5575c37fcf5cacaaeea0561f2dbda

@@ -67,5 +67,8 @@ button[type="submit"]:hover,
 button[type="submit"]:focus {
   background-color: var(--color2);
   color: var(--color1);
-  outline: none;
+  border-style: solid;
+  border-color: var(--color1);
+  border-width: 0.8px;
+  /* outline: none; */
 }
