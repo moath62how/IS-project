@@ -10,7 +10,7 @@
   max-width: 400px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px var(--shadowColor); /* Dynamic shadow */
+  box-shadow: 0 4px 8px var(--shadowColor);
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -67,5 +67,8 @@ button[type="submit"]:hover,
 button[type="submit"]:focus {
   background-color: var(--color2);
   color: var(--color1);
-  outline: none;
+  border-style: solid;
+  border-color: var(--color1);
+  border-width: 0.8px;
+  /* outline: none; */
 }
