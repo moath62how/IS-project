@@ -1,0 +1,10 @@
+footer {
+  background-color: var(--color2);
+  font-family: "Roboto Condensed", sans-serif;
+  display: flex;
+  min-height: 5vh;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  position: static !important;
+}

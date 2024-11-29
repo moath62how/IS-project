@@ -8,26 +8,28 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styleHeader.css" />
+    <link rel="stylesheet" href="./css/styleFooter.css" />
     <title>Zenith Motors</title>
   </head>
   <body>
     <header>
-      <span><i class="fa-solid fa-car-rear"></i> &nbsp; Zenith Motors</span>
+      <span><i class="fa-solid fa-car-rear"></i><a href="/">&nbsp; Zenith Motors</a> </span>
       <nav>
         <ul>
-          <li id="homeBtn">Home</li>
-          <li id="ourProductsBtn">Our products</li>
+          <li id="homeBtn" ><a href="#home">Home</a></li>
+          <li id="ourProductsBtn"><a href="#OurProducts">Our products</a></li>
           <li id="aboutBtn">About</li>
           <li id="contactBtn">Contact</li>
         </ul>
       </nav>
       <span
-        ><a class="authBtn" href=""> Login </a
+        ><a class="authBtn" href="./Login.html"> Login </a
         ><a class="authBtn" href=""> Sign up </a></span
       >
     </header>
     <main>
-      <div class="Separator">Home</div>
+      <div class="Separator" id="home">Home</div>
       <div class="section1">
         <div id="card__welcome">
           <h1>Need A new car?</h1>
@@ -46,7 +48,7 @@
         </div>
         <div><img src="./img/SUV car-bro.svg" alt="car image" id="car1" /></div>
       </div>
-      <div class="Separator">Our Products</div>
+      <div class="Separator" id="OurProducts">Our Products</div>
       <div class="section2">
         <div id="products">
           <div id="product">
@@ -130,8 +132,7 @@
       </div>
     </main>
     <footer>
-      This website was made by Moath hussam , Mostafa Elbashier and Nader El
-      Sayed
+      This website was made by Moath Hussam and Nader El Sayed
     </footer>
   </body>
   <script src="index.js"></script>
