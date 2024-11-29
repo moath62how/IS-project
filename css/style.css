@@ -29,8 +29,7 @@ header {
   grid-template-columns: 15% 73% 12%;
   justify-items: center;
 }
-/* header > nav {
-} */
+
 header > span {
   display: flex;
   justify-items: center;
