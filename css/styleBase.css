@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+main {
+  display: flex;
+  font-family: "Roboto Condensed", sans-serif;
+  position: relative;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+body {
+  background-color: var(--colorBg);
+  color: var(--colorFont1);
+  scroll-behavior: smooth;
+}
