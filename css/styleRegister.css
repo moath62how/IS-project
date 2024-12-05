@@ -40,12 +40,6 @@
   box-shadow: 0 0 5px var(--color1);
 }
 
-.error-message {
-  color: var(--colorError);
-  font-size: 12px;
-  display: none;
-}
-
 button[type="submit"] {
   width: 100%;
   padding: 10px;
