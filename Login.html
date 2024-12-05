@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="./css/styleHeader.css" />
     <link rel="stylesheet" href="./css/styleFooter.css" />
 
-
-
     <title>Zenith Motors | Login</title>
   </head>
   <body>
@@ -37,35 +35,41 @@
       >
     </header>
     <main>
-      <form class="login-form" action="" method="POST" >
-      <h2>Login</h2>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input 
-          type="email" 
-          id="email" 
-          name="email" 
-          placeholder="example@example.com" 
-          required 
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-        >
-        <small class="error-message">Please enter a valid email address.</small>
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input 
-          type="password" 
-          id="password" 
-          name="password" 
-          placeholder="Password (8-20 characters)" 
-          required 
-          minlength="8" 
-          maxlength="20"
-        >
-        <small class="error-message">Password must be 8-20 characters long.</small>
-      </div>
-      <button type="submit">Login</button>
-    </form>
+      <form class="login-form" action="" method="POST">
+        <h2>Login</h2>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@example.com"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          />
+          <small class="error-message"
+            >Please enter a valid email address.</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password (8-20 characters)"
+            required
+            minlength="8"
+            maxlength="20"
+          />
+          <small class="error-message"
+            >Password must be 8-20 characters long.</small
+          >
+        </div>
+        <button type="submit">Login</button>
+        <p class="login-redirect">
+          New User? <a href="./register.html">Register here</a>
+        </p>
       </form>
     </main>
     <footer>This website was made by Moath hussam and Nader El Sayed</footer>

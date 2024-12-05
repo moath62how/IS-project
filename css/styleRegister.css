@@ -1,8 +1,3 @@
-:root {
-  --colorError: #ff6b6b;
-  --shadowColor: rgba(0, 0, 0, 0.2);
-}
-
 .login-form {
   background-color: var(--color2);
   color: var(--colorFont2);

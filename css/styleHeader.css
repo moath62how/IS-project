@@ -1,22 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Marhey&family=Roboto+Condensed:wght@600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
-:root {
-  --colorBg: #000c15;
-  --colorFont1: #b5c9d7;
-  --colorFont2: #ffff;
-  --color2: #294c60;
-  --color1: #fff8eb;
-  --colorError: #ff6b6b;
-  --shadowColor: rgba(0, 0, 0, 0.2);
-}
 header {
   font-family: "Roboto Condensed", sans-serif;
   color: var(--colorFont1);
