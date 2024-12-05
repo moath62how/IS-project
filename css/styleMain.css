@@ -105,10 +105,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-.section3 > .container {
   width: 99vw;
   min-height: 800px;
+}
+.section3 > .container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -141,8 +141,6 @@
 }
 
 .section4 > .container {
-  width: 99vw;
-  min-height: 800px;
   display: flex;
   justify-content: space-around;
   align-items: center;
