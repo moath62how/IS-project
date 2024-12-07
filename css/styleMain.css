@@ -33,10 +33,11 @@
 }
 .Separator {
   margin-top: 60px;
+  margin-bottom: 20px;
   font-size: 25pt;
   font-family: "Roboto Condensed", sans-serif;
   text-align: center;
-  padding: 15px;
+  padding: 5px;
 }
 
 .section2 {
@@ -97,7 +98,7 @@
 }
 #product:hover > #Car__name {
   display: inline;
-  position: sticky;
+  position: relative;
   bottom: 50%;
 }
 .section3 {
