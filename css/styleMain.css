@@ -51,6 +51,7 @@
   overflow-x: scroll;
   overflow-y: hidden;
   width: 70%;
+  min-height: 300px;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -80,7 +81,7 @@
   height: 200px;
 }
 #car__img {
-  transition: 0.3s ease;
+  transition: 0.5s ease-in-out;
 }
 #car__img > img {
   height: 200px;
@@ -89,7 +90,6 @@
 
 #product:hover > #car__img {
   opacity: 0.5;
-  transition: 0.3s;
 }
 #Car__name {
   color: var(--colorFont2);
