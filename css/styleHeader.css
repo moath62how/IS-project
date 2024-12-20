@@ -1,0 +1,46 @@
+header {
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--colorFont1);
+  background-color: var(--color2);
+  height: 7vh;
+  display: grid;
+  grid-template-columns: 15% 73% 12%;
+  justify-items: center;
+}
+
+header > span {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.authBtn {
+  margin: 0 10px 0 10px;
+  padding: 10px;
+  color: #33393c;
+  background-color: #cdd2d6;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+.authBtn:hover {
+  opacity: 0.8;
+}
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+nav > ul {
+  list-style: none;
+  display: flex;
+}
+nav > ul > * {
+  margin: 10px;
+  font-size: 15pt;
+  transition: 0.3s;
+}
+nav > ul > *:hover {
+  position: sticky;
+  cursor: pointer;
+  opacity: 0.7;
+  border-bottom: solid 1px;
+}

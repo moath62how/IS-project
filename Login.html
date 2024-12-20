@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ad7aa15664.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/styleBase.css" />
+    <link rel="stylesheet" href="./css/styleLogin.css" />
+    <link rel="stylesheet" href="./css/styleHeader.css" />
+    <link rel="stylesheet" href="./css/styleFooter.css" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <title>Zenith Motors | Login</title>
+  </head>
+  <body>
+    <header>
+      <span
+        ><i class="fa-solid fa-car-rear"></i
+        ><a href="/index.html">&nbsp; Zenith Motors</a>
+      </span>
+
+      <nav>
+        <ul>
+          <li id="homeBtn">Home</li>
+          <li id="ourProductsBtn">Our products</li>
+          <li id="aboutBtn">About</li>
+          <li id="contactBtn">Contact</li>
+        </ul>
+      </nav>
+      <span
+        ><a class="authBtn" href="./Login.html"> Login </a
+        ><a class="authBtn" href="./register.html"> Sign up </a></span
+      >
+    </header>
+    <main>
+      <form class="login-form" action="" method="POST">
+        <h2>Login</h2>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@example.com"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password (8-20 characters)"
+            required
+            minlength="8"
+            maxlength="20"
+          />
+        </div>
+        <button type="submit">Login</button>
+        <p class="login-redirect">
+          New User? <a href="./register.html">Register here</a>
+        </p>
+      </form>
+    </main>
+    <footer>This website was made by Moath hussam and Nader El Sayed</footer>
+  </body>
+  <script src="index.js"></script>
+</html>

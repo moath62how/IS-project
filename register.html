@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ad7aa15664.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/styleRegister.css" />
+    <link rel="stylesheet" href="./css/styleBase.css" />
+    <link rel="stylesheet" href="./css/styleHeader.css" />
+    <link rel="stylesheet" href="./css/styleFooter.css" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+
+    <title>Zenith Motors | Sign Up</title>
+  </head>
+
+  <body>
+    <header>
+      <span
+        ><i class="fa-solid fa-car-rear"></i
+        ><a href="/index.html">&nbsp; Zenith Motors</a></span
+      >
+      <nav>
+        <ul>
+          <li id="homeBtn"><a href="#">Home</a></li>
+          <li id="ourProductsBtn"><a href="#">Our products</a></li>
+          <li id="aboutBtn"><a href="#">About</a></li>
+          <li id="contactBtn"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <span>
+        <a class="authBtn" href="./Login.html">Login</a>
+        <a class="authBtn" href="./register.html">Sign Up</a>
+      </span>
+    </header>
+
+    <main>
+      <form class="login-form" action="" method="POST" id="registerForm">
+        <h2>Sign Up</h2>
+        <!-- First Name Field -->
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="John"
+            required
+          />
+        </div>
+
+        <!-- Last Name Field -->
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Doe"
+            required
+          />
+        </div>
+
+        <!-- Email Field -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@example.com"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          />
+        </div>
+
+        <!-- Password Field -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password (8-20 characters)"
+            required
+            minlength="8"
+            maxlength="20"
+          />
+        </div>
+
+        <!-- Confirm Password Field -->
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            placeholder="Confirm your password"
+            required
+            minlength="8"
+            maxlength="20"
+          />
+        </div>
+
+        <!-- Terms and Conditions Checkbox -->
+        <div class="form-group">
+          <label>
+            <input type="checkbox" name="terms" required /> I agree to the
+            <a href="#">Terms and Conditions</a>
+          </label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Sign Up</button>
+        <p class="login-redirect">
+          Already have an account? <a href="./Login.html">Login here</a>
+        </p>
+      </form>
+    </main>
+
+    <footer>This website was made by Moath Hussam and Nader El Sayed</footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
