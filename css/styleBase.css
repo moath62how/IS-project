@@ -18,7 +18,9 @@
   --color1: #fff8eb;
   --colorError: #ff6b6b;
   --shadowColor: rgba(0, 0, 0, 0.2);
+  --colorHoverBg: #0a4d7a;
 }
+
 main {
   display: flex;
   font-family: "Roboto Condensed", sans-serif;
@@ -29,6 +31,7 @@ main {
   align-content: center;
   align-items: center;
 }
+
 body {
   background-color: var(--colorBg);
   color: var(--colorFont1);

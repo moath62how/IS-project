@@ -95,7 +95,7 @@
 }
 
 .car-image::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -186,4 +186,23 @@
 .contact-card > svg {
   scale: 2.5;
   padding: 50px;
+}
+#upButton {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  width: 42px;
+  height: 42px;
+  border-radius: 5px;
+  margin: 10px;
+  border: none;
+  background-color: #4988ac;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+#upButton:hover {
+  transition: ease-in-out 0.2s;
+  background-color: var(--colorHoverBg);
 }
