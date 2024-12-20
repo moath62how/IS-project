@@ -199,9 +199,21 @@
   border: none;
   background-color: #4988ac;
   cursor: pointer;
-  transition: ease-in-out 0.2s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+  opacity: 0;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
 }
-
+#upButton.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+#upButton:not(.hidden) {
+  opacity: 1;
+  visibility: visible;
+}
 #upButton:hover {
   transition: ease-in-out 0.2s;
   background-color: var(--colorHoverBg);

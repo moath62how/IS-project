@@ -4,9 +4,9 @@ window.addEventListener('scroll', () => {
     console.log(window.scrollY);
 
     if (window.scrollY >= 500) {
-        UpBtn.style.display = 'block';
+        UpBtn.classList.remove('hidden');
     } else {
-        UpBtn.style.display = 'none';
+        UpBtn.classList.add('hidden');
     }
 })
 
