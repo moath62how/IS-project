@@ -5,6 +5,17 @@ body {
   background-position: center;
 }
 
+main {
+  display: flex;
+  font-family: 'Roboto Condensed', sans-serif;
+  position: relative;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
 .login-form {
   background-color: var(--color2);
   color: var(--colorFont2);
@@ -13,7 +24,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px var(--shadowColor);
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .login-form h2 {
@@ -47,7 +58,7 @@ body {
   box-shadow: 0 0 5px var(--color1);
 }
 
-button[type="submit"] {
+button[type='submit'] {
   width: 100%;
   padding: 10px;
   background-color: var(--color1);
@@ -59,8 +70,8 @@ button[type="submit"] {
   transition: 0.3s;
 }
 
-button[type="submit"]:hover,
-button[type="submit"]:focus {
+button[type='submit']:hover,
+button[type='submit']:focus {
   background-color: var(--color2);
   color: var(--color1);
   border-style: solid;
