@@ -34,6 +34,5 @@ document.getElementById('registerForm').addEventListener('submit', function (eve
     return;
   }
 
-  // If all validations pass, submit the form
   this.submit();
 });
