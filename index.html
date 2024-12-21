@@ -18,10 +18,10 @@
   <body>
     <button id="upButton"><i class="fa-solid fa-arrow-up"></i></button>
     <header>
-      <span
+      <span class="logo"
         ><i class="fa-solid fa-car-rear"></i
-        ><a href="./index.html">&nbsp; Zenith Motors</a>
-      </span>
+        ><a href="./index.html">&nbsp; Zenith Motors</a></span
+      >
       <nav>
         <ul>
           <li id="homeBtn"><a href="#home">Home</a></li>
@@ -30,40 +30,72 @@
           <li id="contactBtn"><a href="#contacts">Contact</a></li>
         </ul>
       </nav>
-      <span
-        ><a class="authBtn" href="./Login.html"> Login </a
-        ><a class="authBtn" href="./register.html"> Sign up </a></span
-      >
+      <span>
+        <a class="authBtn" href="./Login.html">
+          <svg
+            width="23"
+            height="24"
+            viewBox="0 0 23 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.4523 23.5911V21.073H20.2658V3.4461H11.4523V0.927979H20.2658C20.9583 0.927979 21.5513 1.17475 22.0448 1.66831C22.5384 2.16186 22.7847 2.75446 22.7839 3.4461V21.073C22.7839 21.7655 22.5375 22.3585 22.0448 22.852C21.5521 23.3456 20.9591 23.592 20.2658 23.5911H11.4523ZM8.9342 18.5549L7.20299 16.7292L10.4136 13.5186H0.120758V11.0005H10.4136L7.20299 7.78987L8.9342 5.96423L15.2295 12.2595L8.9342 18.5549Z"
+              fill="white"
+            />
+          </svg>
+          Login
+        </a>
+        <a class="authBtn" href="./register.html">
+          <svg
+            width="19"
+            height="19"
+            viewBox="0 0 19 19"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5.27994 4.68906C5.27994 3.60596 5.7102 2.56722 6.47607 1.80135C7.24194 1.03548 8.28068 0.605225 9.36378 0.605225C10.4469 0.605225 11.4856 1.03548 12.2515 1.80135C13.0174 2.56722 13.4476 3.60596 13.4476 4.68906C13.4476 5.77217 13.0174 6.81091 12.2515 7.57677C11.4856 8.34264 10.4469 8.7729 9.36378 8.7729C8.28068 8.7729 7.24194 8.34264 6.47607 7.57677C5.7102 6.81091 5.27994 5.77217 5.27994 4.68906ZM5.27994 10.8148C3.92606 10.8148 2.62764 11.3526 1.6703 12.31C0.712966 13.2673 0.17514 14.5657 0.17514 15.9196C0.17514 16.7319 0.497836 17.511 1.07224 18.0854C1.64664 18.6598 2.42569 18.9825 3.23802 18.9825H15.4895C16.3019 18.9825 17.0809 18.6598 17.6553 18.0854C18.2297 17.511 18.5524 16.7319 18.5524 15.9196C18.5524 14.5657 18.0146 13.2673 17.0573 12.31C16.0999 11.3526 14.8015 10.8148 13.4476 10.8148H5.27994Z"
+              fill="white"
+            />
+          </svg>
+          Sign up
+        </a>
+      </span>
     </header>
     <main>
-      <div class="Separator" id="home">Home</div>
-      <div class="section1">
-        <div id="card__welcome">
-          <h1>Need A new car?</h1>
-          <span
-            >A stunning showcase of technology and elegance at this car
-            exhibition. Explore new levels of performance and design at this
-            inspiring car show. Our exhibition offers a unique experience to
-            discover the latest automotive innovations. Get acquainted with the
-            newest models and technologies at our distinctive car exhibition.
-            Eye-catching beauty and outstanding performance converge at this car
-            show. Luxury and excellence pulse at every corner of our exhibition.
-            An unparalleled display of the latest luxurious models in our
-            collection. Enjoy an exciting journey of exploration into the future
-            at our car exhibition.</span
-          >
+      <section class="section1">
+        <div class="Separator" id="home">Home</div>
+        <div class="container">
+          <div id="card__welcome">
+            <h1>Need A new car?</h1>
+            <span
+              >A stunning showcase of technology and elegance at this car
+              exhibition. Explore new levels of performance and design at this
+              inspiring car show. Our exhibition offers a unique experience to
+              discover the latest automotive innovations. Get acquainted with
+              the newest models and technologies at our distinctive car
+              exhibition. Eye-catching beauty and outstanding performance
+              converge at this car show. Luxury and excellence pulse at every
+              corner of our exhibition. An unparalleled display of the latest
+              luxurious models in our collection. Enjoy an exciting journey of
+              exploration into the future at our car exhibition.</span
+            >
+          </div>
+          <div>
+            <img
+              src="./img/first.png"
+              alt="car image"
+              id="car1"
+              class="car-image"
+            />
+          </div>
         </div>
-        <div>
-          <img
-            src="./img/first.png"
-            alt="car image"
-            id="car1"
-            class="car-image"
-          />
-        </div>
-      </div>
-      <div class="Separator" id="OurProducts">Our Products</div>
-      <div class="section2">
+      </section>
+      <section class="section2">
+        <div class="Separator" id="OurProducts">Our Products</div>
         <div id="products">
           <div id="product">
             <div id="car__img">
@@ -96,8 +128,8 @@
             <span id="Car__name">rolls royce cullinan 2023</span>
           </div>
         </div>
-      </div>
-      <div class="section3">
+      </section>
+      <section class="section3">
         <div class="Separator" id="about">About</div>
         <div class="container">
           <div class="card">
@@ -131,8 +163,8 @@
             </p>
           </div>
         </div>
-      </div>
-      <div class="section4">
+      </section>
+      <section class="section4">
         <div class="Separator" id="contacts">Contacts</div>
         <div class="container">
           <div class="contact-card">
@@ -162,10 +194,8 @@
             <p>Email address: Cars@email.com</p>
           </div>
         </div>
-      </div>
+      </section>
     </main>
-    <footer>This website was made by Moath Hussam and Nader El Sayed</footer>
-
     <script src="index.js"></script>
   </body>
 </html>
