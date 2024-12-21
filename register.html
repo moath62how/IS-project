@@ -1,128 +1,92 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/ad7aa15664.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./css/styleRegister.css" />
-    <link rel="stylesheet" href="./css/styleBase.css" />
-    <link rel="stylesheet" href="./css/styleHeader.css" />
-    <link rel="stylesheet" href="./css/styleFooter.css" />
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
 
-    <title>Zenith Motors | Sign Up</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/ad7aa15664.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/styleRegister.css" />
+  <link rel="stylesheet" href="./css/styleBase.css" />
+  <link rel="stylesheet" href="./css/styleHeader.css" />
+  <link rel="stylesheet" href="./css/styleFooter.css" />
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
 
-  <body>
-    <header>
-      <span
-        ><i class="fa-solid fa-car-rear"></i
-        ><a href="./index.html">&nbsp; Zenith Motors</a></span
-      >
-      <nav>
-        <ul>
-          <li id="homeBtn"><a href="#">Home</a></li>
-          <li id="ourProductsBtn"><a href="#">Our products</a></li>
-          <li id="aboutBtn"><a href="#">About</a></li>
-          <li id="contactBtn"><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <span>
-        <a class="authBtn" href="./Login.html">Login</a>
-        <a class="authBtn" href="./register.html">Sign Up</a>
-      </span>
-    </header>
+  <title>Zenith Motors | Sign Up</title>
+</head>
 
-    <main>
-      <form class="login-form" action="" method="POST" id="registerForm">
-        <h2>Sign Up</h2>
-        <!-- First Name Field -->
-        <div class="form-group">
-          <label for="firstName">First Name</label>
-          <input
-            type="text"
-            id="firstName"
-            name="firstName"
-            placeholder="John"
-            required
-          />
-        </div>
+<body>
+  <header>
+    <span><i class="fa-solid fa-car-rear"></i><a href="./index.html">&nbsp; Zenith Motors</a></span>
+    <nav>
+      <ul>
+        <li id="homeBtn"><a href="./index.html#home">Home</a></li>
+        <li id="ourProductsBtn"><a href="./index.html#OurProducts">Our products</a></li>
+        <li id="aboutBtn"><a href="./index.html#about">About</a></li>
+        <li id="contactBtn"><a href="./index.html#contacts">Contact</a></li>
+      </ul>
+    </nav>
+    <span>
+      <a class="authBtn" href="./Login.html">Login</a>
+      <a class="authBtn" href="./register.html">Sign Up</a>
+    </span>
+  </header>
 
-        <!-- Last Name Field -->
-        <div class="form-group">
-          <label for="lastName">Last Name</label>
-          <input
-            type="text"
-            id="lastName"
-            name="lastName"
-            placeholder="Doe"
-            required
-          />
-        </div>
+  <main>
+    <form class="login-form" action="" method="POST" id="registerForm">
+      <h2>Sign Up</h2>
+      <!-- First Name Field -->
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" placeholder="John" required />
+      </div>
 
-        <!-- Email Field -->
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="example@example.com"
-            required
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-          />
-        </div>
+      <!-- Last Name Field -->
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+      </div>
 
-        <!-- Password Field -->
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Password (8-20 characters)"
-            required
-            minlength="8"
-            maxlength="20"
-          />
-        </div>
+      <!-- Email Field -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="example@example.com" required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+      </div>
 
-        <!-- Confirm Password Field -->
-        <div class="form-group">
-          <label for="confirmPassword">Confirm Password</label>
-          <input
-            type="password"
-            id="confirmPassword"
-            name="confirmPassword"
-            placeholder="Confirm your password"
-            required
-            minlength="8"
-            maxlength="20"
-          />
-        </div>
+      <!-- Password Field -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password (8-20 characters)" required
+          minlength="8" maxlength="20" />
+      </div>
 
-        <!-- Terms and Conditions Checkbox -->
-        <div class="form-group">
-          <label>
-            <input type="checkbox" name="terms" required /> I agree to the
-            <a href="#">Terms and Conditions</a>
-          </label>
-        </div>
+      <!-- Confirm Password Field -->
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required
+          minlength="8" maxlength="20" />
+      </div>
 
-        <!-- Submit Button -->
-        <button type="submit">Sign Up</button>
-        <p class="login-redirect">
-          Already have an account? <a href="./Login.html">Login here</a>
-        </p>
-      </form>
-    </main>
+      <!-- Terms and Conditions Checkbox -->
+      <div class="form-group">
+        <label>
+          <input type="checkbox" name="terms" required /> I agree to the
+          <a href="#">Terms and Conditions</a>
+        </label>
+      </div>
 
-    <footer>This website was made by Moath Hussam and Nader El Sayed</footer>
+      <!-- Submit Button -->
+      <button type="submit">Sign Up</button>
+      <p class="login-redirect">
+        Already have an account? <a href="./Login.html">Login here</a>
+      </p>
+    </form>
+  </main>
 
-    <script src="index.js"></script>
-    <script src="validation.js"></script>
-  </body>
+  <footer>This website was made by Moath Hussam and Nader El Sayed</footer>
+
+  <script src="index.js"></script>
+  <script src="validation.js"></script>
+</body>
+
 </html>
