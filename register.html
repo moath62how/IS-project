@@ -32,7 +32,7 @@
   </header>
 
   <main>
-    <form class="login-form" action="" method="POST" id="registerForm">
+    <form class="login-form" action="" method="POST" id="registerForm" onsubmit="return handleFormSubmit(event)">
       <h2>Sign Up</h2>
       <!-- First Name Field -->
       <div class="form-group">
@@ -87,6 +87,24 @@
 
   <script src="index.js"></script>
   <script src="validation.js"></script>
+  <script>
+    function handleFormSubmit(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Perform form validation
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+
+      if (password !== confirmPassword) {
+        alert('Passwords do not match.');
+        return false;
+      }
+
+      // If successful, redirect to the main page
+      window.location.href = './index.html';
+      return false;
+    }
+  </script>
 </body>
 
 </html>
