@@ -1,3 +1,9 @@
+body {
+  background-image: url(../img/first.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .login-form {
   background-color: var(--color2);
   color: var(--colorFont2);
