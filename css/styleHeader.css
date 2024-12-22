@@ -1,7 +1,6 @@
 header {
   font-family: 'Readex Pro', serif;
   color: var(--colorFont1);
-  /* background-color: var(--color2); */
   background-color: #032034;
   height: 7vh;
   display: grid;
@@ -19,18 +18,18 @@ header > span {
   display: flex;
   align-items: center;
 }
-
 header > .logo {
   justify-self: start;
   display: flex;
   align-items: center;
+  background: linear-gradient(45deg, #032034, #372884, #2c22a4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .authBtn {
   margin: 0 10px;
   padding: 10px 20px;
-  /* color: #33393c; */
-  /* background-color: #cdd2d6; */
   text-decoration: none;
   border-radius: 20px;
   transition:
@@ -46,7 +45,7 @@ header > .logo {
   background: none;
 }
 .authBtn:nth-of-type(2) {
-  background: red;
+  background: linear-gradient(45deg, #032034, #372884, #2c22a4);
 }
 .authBtn:hover {
   background-color: #b0b7bc;
