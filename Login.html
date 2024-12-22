@@ -71,4 +71,14 @@
     <footer>This website was made by Moath Hussam and Nader El Sayed</footer>
   </body>
   <script src="index.js"></script>
+  <script>
+    document.querySelectorAll('nav a').forEach((anchor) => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth',
+        });
+      });
+    });
+  </script>
 </html>

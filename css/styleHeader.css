@@ -88,3 +88,13 @@ nav > ul > li > a:hover {
   color: var(--colorAccent);
   opacity: 0.8;
 }
+
+nav > ul > li > a.active {
+  color: white;
+  text-shadow: 0 0 10px white;
+  border-bottom: 2px solid white;
+}
+
+nav > ul > li > a {
+  color: #808d97;
+}
